@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>hello word</title>
+		<link rel="stylesheet" href="css/layui.css">
+	</head>
+
+	<body class="layui-layout-body">
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-header">
+				<div class="layui-logo">
+					<img src="images/ifly-logo2.png" /> 传智书城后台管理系统
+				</div>
+				<!-- 头部区域（可配合layui已有的水平导航） -->
+
+				<ul class="layui-nav layui-layout-right">
+					<li class="layui-nav-item">
+						<a href="javascript:">
+							<img src="http://z.ahdy.top/medias/avatar.jpg" class="layui-nav-img"> 管理员
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="">基本资料</a>
+							</dd>
+							<dd>
+								<a href="">安全设置</a>
+							</dd>
+							<dd>
+								<a href="login.html">退出登陆</a>
+							</dd>
+
+						</dl>
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="layui-side layui-bg-black">
+				<div class="layui-side-scroll">
+					<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+					<ul class="layui-nav layui-nav-tree" lay-filter="test">
+						<li class="layui-nav-item layui-nav-itemed">
+							<a class="layui-icon layui-icon-home" href="javascript:">&nbsp;我的工作台</a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a class="layui-icon layui-icon-speaker" href="javascript:">&nbsp;信息和报表</a>
+								</dd>
+								<dd>
+									<a class="layui-icon layui-icon-friends" href="javascript:">&nbsp;个人信息</a>
+								</dd>
+								<dd>
+									<a class="layui-icon layui-icon-password" href="javascript:">&nbsp;密码修改</a>
+								</dd>
+							
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a class="layui-icon layui-icon-set" javascript:;>&nbsp;系统功能</a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a class="layui-icon layui-icon-user" href="javascript:">&nbsp;员工管理</a>
+								</dd>
+								<dd>
+									<a class="layui-icon layui-icon-username" javascript:; >&nbsp;角色管理</a>
+								</dd>
+								<dd>
+									<a class="layui-icon layui-icon-note" href="javascript:">&nbsp;菜单管理</a>
+								</dd>
+								<dd>
+									<a  class="layui-icon layui-icon-chart-screen" href="javascript:">&nbsp;数据字典</a>
+								</dd>
+								<dd>
+									<a class="layui-icon layui-icon-console" href="javascript:">&nbsp;办公地管理</a>
+								</dd>
+
+							</dl>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="layui-body">
+				<!-- 内容主体区域 -->
+				<div style="padding: 15px;">
+				<iframe id="mainFrame" name="mainFrame" src="main/new_file.html" frameborder="0" style="width: 100%;"></iframe>
+				</div>
+			</div>
+
+			<div class="layui-footer">
+				<!-- 底部固定区域 -->
+				2019©软件学院
+			</div>
+		</div>
+		<script src="layui.all.js"></script>
+		<script>
+			//JavaScript代码区域
+			layui.use('element', function() {
+				var element = layui.element;
+
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.yeyouluo.mybatis.druid.dao.userDao">
+    <select id="findAllUsers" resultType="com.yeyouluo.mybatis.druid.pojo.User">
+        select * from user
+    </select>
+    <select id="DeleteUser" resultType="com.yeyouluo.mybatis.druid.pojo.User">
+        delete from user where id =1
+    </select>
+    <select id="InsertUser" resultType="com.yeyouluo.mybatis.druid.pojo.User">
+
+    </select>
+
+
+    
+    <!-- 
+    <resultMap type="com.tarena.entity.Dept" id="deptMap">
+        <result property="id" column="deptno"/>
+        <result property="name" column="dname"/>
+        <result property="loc" column="loc"/>
+    </resultMap>
+    --> 
+</mapper>
